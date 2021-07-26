@@ -18,6 +18,8 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class ServiceResultBean<T> extends ResultBean<T> {
 
+    // TODO 是否集成值得考虑一下
+
     private String errorMsg;
 
     protected ServiceResultBean(int code, String msg, T data) {
