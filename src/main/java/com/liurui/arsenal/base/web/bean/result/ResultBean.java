@@ -20,6 +20,9 @@ public class ResultBean<T> {
     private String msg;
     private T data;
 
+    protected ResultBean() {
+    }
+
     protected ResultBean(int code, String msg, T data) {
         this.code = code;
         this.msg = msg;
@@ -31,7 +34,7 @@ public class ResultBean<T> {
     }
 
     public static <T> ResultBean<T> getInstance(int code, T data) {
-        return getInstance(code, data).setMsg("");
+        return new ResultBean<T>(code, "", data);
     }
 
     public static ResultBean<?> getInstance(ErrorCodeMsg error) {
