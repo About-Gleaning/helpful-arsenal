@@ -16,13 +16,10 @@ import lombok.experimental.Accessors;
 @Setter
 @ToString
 @Accessors(chain = true)
-public class ServiceResultBean<T> extends ResultBean<T> {
+public class ServiceResultBean<T> {
 
     // TODO 是否集成值得考虑一下
 
     private String errorMsg;
 
-    protected ServiceResultBean(int code, String msg, T data) {
-        super(code, msg, data);
-    }
 }

@@ -11,7 +11,12 @@ public enum ErrorCodeMsg {
      * 错误码, 文案
      */
     SUCCESS(0, "成功"),
-    FAIL(10, "失败");
+    FAIL(10, "失败"),
+    BUSINESS_ERROR(100, "业务异常"),
+    NETWORK_ERROR(200, "网络异常"),
+    IO_ERROR(300, "IO异常"),
+    DATABASE_ERROR(400, "数据库异常"),
+    APPLICATION_ERROR(500, "应用异常");
 
     private Integer code;
     private String msg;
