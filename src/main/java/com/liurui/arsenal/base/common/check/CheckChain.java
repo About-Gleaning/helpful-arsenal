@@ -1,6 +1,5 @@
 package com.liurui.arsenal.base.common.check;
 
-import com.google.common.base.Strings;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.Collection;
